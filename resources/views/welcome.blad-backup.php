@@ -43,21 +43,17 @@
                 top: 18px;
             }
             .top-left {
+                position: absolute;
                 left: 10px;
                 top: 18px;
-                display:block;
-                width:100%;
-                padding: 20px 0px 20px 0px;
-                background:#efefef;
-                margin-bottom:50px;
             }
 
             .content {
-                text-align: left;
+                text-align: center;
             }
 
             .title {
-                font-size: 24px;
+                font-size: 84px;
             }
 
             .links > a {
@@ -76,7 +72,7 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -90,9 +86,10 @@
 
             @include('menu')
 
-            <div class="content col-lg-12">
-                
-                @yield('content');
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
