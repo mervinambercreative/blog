@@ -2,7 +2,7 @@
 
 @section('content')
 
-    New Homepage
+    <h1>New Homepage</h1>
 
 @stop
 
